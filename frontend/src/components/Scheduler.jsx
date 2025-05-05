@@ -4,8 +4,8 @@ import { format, addDays, subDays } from 'date-fns';
 function Scheduler() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [events, setEvents] = useState([
-    { id: 1, title: 'Meeting with John', time: new Date(new Date().setHours(9, 0, 0)) },
-    { id: 2, title: 'Project Review', time: new Date(new Date().setHours(14, 30, 0)) }, // Example with 2 PM
+    { id: 1, title: 'Sending the mails from uploaded CSV', time: new Date(new Date().setHours(9, 0, 0)) },
+    { id: 2, title: 'Response Review', time: new Date(new Date().setHours(14, 30, 0)) }, // Example with 2 PM
   ]);
   const [isAddingEvent, setIsAddingEvent] = useState(false);
   const [newEventTitle, setNewEventTitle] = useState('');
