@@ -42,7 +42,7 @@ const Analytics = () => {
     labels: ['Achieved', 'Remaining'],
     datasets: [
       {
-        data: [72, 28],
+        data: [32, 68],
         backgroundColor: ['#10B981', '#E5E7EB'],
         borderWidth: 0,
       },
