@@ -26,12 +26,12 @@ const Analytics = () => {
     labels: ['Jan 01', 'Jan 02', 'Jan 03', 'Jan 04', 'Jan 05', 'Jan 06'],
     datasets: [
       {
-        label: 'Website Blog',
+        label: 'Total Email sent',
         data: [300, 500, 800, 400, 700, 600],
         backgroundColor: '#3B82F6',
       },
       {
-        label: 'Social Media',
+        label: 'Total Responses',
         data: [200, 400, 600, 300, 500, 450],
         backgroundColor: '#10B981',
       },
@@ -39,10 +39,10 @@ const Analytics = () => {
   };
 
   const incomeProgress = {
-    labels: ['Used', 'Remaining'],
+    labels: ['Achieved', 'Remaining'],
     datasets: [
       {
-        data: [75, 25],
+        data: [72, 28],
         backgroundColor: ['#10B981', '#E5E7EB'],
         borderWidth: 0,
       },
@@ -50,10 +50,10 @@ const Analytics = () => {
   };
 
   const targets = [
-    { label: 'Income Target', value: 71, color: 'bg-red-500' },
-    { label: 'Expenses Target', value: 54, color: 'bg-green-500' },
-    { label: 'Spendings Target', value: 32, color: 'bg-yellow-500' },
-    { label: 'Totals Target', value: 89, color: 'bg-blue-500' },
+    { label: 'New Accounts target', value: 71, color: 'bg-red-500' },
+    { label: 'Mail Target', value: 54, color: 'bg-green-500' },
+    { label: 'Response Target', value: 32, color: 'bg-yellow-500' },
+    { label: 'RSVP Target', value: 89, color: 'bg-blue-500' },
   ];
 
   return (
@@ -76,11 +76,11 @@ const Analytics = () => {
           <Bar data={trafficChart} options={{ responsive: true, plugins: { legend: { position: 'bottom' } } }} />
         </div>
         <div className="bg-white p-4 shadow rounded-lg flex flex-col items-center justify-center">
-          <h4 className="font-semibold mb-2">Income</h4>
+          <h4 className="font-semibold mb-2">Response</h4>
           <div className="w-32 h-32">
             <Doughnut data={incomeProgress} options={{ cutout: '70%' }} />
           </div>
-          <p className="text-sm mt-2 text-gray-500">Spending Target</p>
+          <p className="text-sm mt-2 text-gray-500">Target</p>
           <span className="text-xl font-bold mt-1 text-green-500">75%</span>
         </div>
       </div>
