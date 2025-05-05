@@ -81,7 +81,7 @@ const Analytics = () => {
             <Doughnut data={incomeProgress} options={{ cutout: '70%' }} />
           </div>
           <p className="text-sm mt-2 text-gray-500">Target</p>
-          <span className="text-xl font-bold mt-1 text-green-500">75%</span>
+          <span className="text-xl font-bold mt-1 text-green-500">32%</span>
         </div>
       </div>
 
