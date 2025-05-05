@@ -107,14 +107,14 @@ function Scheduler() {
       <div className="flex items-center justify-between mb-4">
         <button
           onClick={prevDay}
-          className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded"
+          className="bg-gray-200 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded"
         >
           Previous
         </button>
         <h2 className="text-xl font-semibold">{format(currentDate, 'EEEE, MMMM d, yyyy')}</h2>
         <button
           onClick={nextDay}
-          className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded"
+          className="bg-gray-200 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded"
         >
           Next
         </button>
