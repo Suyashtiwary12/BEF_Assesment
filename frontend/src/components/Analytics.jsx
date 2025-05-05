@@ -17,9 +17,9 @@ ChartJS.register(ArcElement, CategoryScale, LinearScale, BarElement, Tooltip, Le
 const Analytics = () => {
   const summary = [
     { label: 'New Accounts', value: 234, change: 58, color: 'text-blue-500' },
-    { label: 'Total Expenses', value: '-71%', change: 62, color: 'text-red-500' },
-    { label: 'Company Value', value: '$1.45M', change: 72, color: 'text-yellow-500' },
-    { label: 'New Employees', value: '+34 hires', change: 81, color: 'text-green-500' },
+    { label: 'Open rates', value: '-71%', change: 62, color: 'text-red-500' },
+    { label: 'Response rates', value: '+12%', change: 72, color: 'text-green-500' },
+    { label: 'Total RSVPs', value: '+34 RSVP', change: 81, color: 'text-green-500' },
   ];
 
   const trafficChart = {
